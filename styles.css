@@ -172,6 +172,22 @@ ul {
   display: none;
 }
 
+.project-meta {
+  margin: 0.25rem 0 1rem;
+}
+.project-meta dt {
+  color: #999;
+  font-size: 0.85rem;
+  margin-top: 0.7rem;
+}
+.project-meta dt:first-child {
+  margin-top: 0;
+}
+.project-meta dd {
+  margin-left: 0;
+  color: #333;
+}
+
 hr {
   border: none;
   border-top: 1px solid #eee;
