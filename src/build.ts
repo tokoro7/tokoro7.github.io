@@ -4,8 +4,8 @@ import { fileURLToPath } from "node:url";
 
 import type { Project } from "./Project.ts";
 import { projects } from "./projects/index.ts";
-import { renderDetailPage } from "./templates/detailPage.ts";
-import { renderIndexPage } from "./templates/indexPage.ts";
+import { renderDetailPage } from "./templates/detailPage.tsx";
+import { renderIndexPage } from "./templates/indexPage.tsx";
 
 const SRC_DIR = dirname(fileURLToPath(import.meta.url));
 const ROOT_DIR = dirname(SRC_DIR);

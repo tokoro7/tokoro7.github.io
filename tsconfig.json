@@ -11,7 +11,13 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "allowImportingTsExtensions": true,
-    "noEmit": true
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "ssg-jsx",
+    "paths": {
+      "ssg-jsx/jsx-runtime": ["./src/jsx/jsx-runtime.ts"],
+      "ssg-jsx/jsx-dev-runtime": ["./src/jsx/jsx-dev-runtime.ts"]
+    }
   },
   "include": ["src/**/*"]
 }
