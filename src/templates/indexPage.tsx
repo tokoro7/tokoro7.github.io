@@ -1,5 +1,5 @@
 import { ProjectCard } from "../components/ProjectCard.tsx";
-import type { Project } from "../Project.ts";
+import type { Project } from "../project.ts";
 import { about, awards, profile, skills } from "../siteContent.ts";
 import { renderPage } from "./layout.tsx";
 

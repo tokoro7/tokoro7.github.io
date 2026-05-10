@@ -1,6 +1,6 @@
-import { Project } from "../../Project.ts";
+import type { Project } from "../../project.ts";
 
-export const virtualToudai = new Project({
+export const virtualToudai: Project = {
   slug: "virtual-toudai",
   title: "バーチャル東大",
   tagline: "東京大学総長賞 大賞 — バーチャル東大の構築と公開",
@@ -29,4 +29,4 @@ export const virtualToudai = new Project({
       href: "https://vr.u-tokyo.ac.jp/virtualUT/",
     },
   ],
-});
+};

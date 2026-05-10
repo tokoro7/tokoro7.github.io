@@ -1,4 +1,4 @@
-import type { Media } from "../Project.ts";
+import type { Media } from "../project.ts";
 
 export function MediaFigure({ media: m }: { media: Media }) {
   return (

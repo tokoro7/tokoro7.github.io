@@ -1,6 +1,6 @@
-import { Project } from "../../Project.ts";
+import type { Project } from "../../project.ts";
 
-export const hz = new Project({
+export const hz: Project = {
   slug: "hz",
   title: "Hz",
   tagline: "IVRC2023 メタバース部門 総合優勝・特別審査員賞 Voxel Kei賞",
@@ -30,4 +30,4 @@ export const hz = new Project({
       href: "https://ivrc.net/2023_metaverse/leap-stage/",
     },
   ],
-});
+};

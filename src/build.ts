@@ -2,7 +2,7 @@ import { copyFile, mkdir, rm } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-import type { Project } from "./Project.ts";
+import { assetFiles, type Project } from "./project.ts";
 import { projects } from "./projects/index.ts";
 import { renderDetailPage } from "./templates/detailPage.tsx";
 import { renderIndexPage } from "./templates/indexPage.tsx";
@@ -20,7 +20,7 @@ async function copyProjectAssets(p: Project): Promise<void> {
   const srcDir = join(SRC_DIR, "projects", p.slug);
   const dstDir = join(DIST_DIR, "projects", p.slug);
   await mkdir(dstDir, { recursive: true });
-  for (const file of p.assetFiles()) {
+  for (const file of assetFiles(p)) {
     await copyFile(join(srcDir, file), join(dstDir, file));
   }
 }

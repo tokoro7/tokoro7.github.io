@@ -1,18 +1,17 @@
-import type { Project } from "../Project.ts";
+import { cardCoverHref, detailPageHref, type Project } from "../project.ts";
 
 export function ProjectCard({ project }: { project: Project }) {
-  const { data } = project;
-  const summary = data.cardSummary ?? data.tagline;
+  const summary = project.cardSummary ?? project.tagline;
   return (
-    <a href={project.detailPageHref()} class="project-card">
+    <a href={detailPageHref(project)} class="project-card">
       <img
         class="thumb"
-        src={project.cardCoverHref()}
+        src={cardCoverHref(project)}
         alt=""
         onerror="this.style.visibility='hidden'"
       />
       <div class="body">
-        <h3>{data.title}</h3>
+        <h3>{project.title}</h3>
         <p>{summary}</p>
       </div>
     </a>

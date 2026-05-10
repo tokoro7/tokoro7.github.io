@@ -1,9 +1,9 @@
-import type { Project } from "../Project.ts";
+import type { Project } from "../project.ts";
 import { MediaFigure } from "./MediaFigure.tsx";
 
 export function ProjectDetail({ project }: { project: Project }) {
   const { title, tagline, cover, overview, team, techStack, media, links } =
-    project.data;
+    project;
 
   return (
     <>

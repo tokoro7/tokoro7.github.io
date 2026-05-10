@@ -1,5 +1,5 @@
 import { ProjectDetail } from "../components/ProjectDetail.tsx";
-import type { Project } from "../Project.ts";
+import type { Project } from "../project.ts";
 import { profile } from "../siteContent.ts";
 import { renderPage } from "./layout.tsx";
 
