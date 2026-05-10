@@ -1,4 +1,5 @@
 import type { Html } from "../jsx/jsx-runtime.ts";
+import { profile } from "../siteContent.ts";
 
 export type LayoutOptions = {
   title: string;
@@ -23,7 +24,7 @@ export function renderPage({ title, stylesHref, body, lang = "ja" }: LayoutOptio
         <main>
           {body}
           <hr />
-          <footer>© 2026 Takeru Tokoro</footer>
+          <footer>© {new Date().getFullYear()} {profile.name}</footer>
         </main>
       </body>
     </html>
